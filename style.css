@@ -1,0 +1,194 @@
+@font-face {
+	font-family: 'futura01';
+	src: url(Futura-Medium.ttf);
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--shape-size: 200px;
+}
+
+.shape-container {
+	height: var(--shape-size);
+	width: var(--shape-size);
+	background-color: tomato;
+	position: relative;
+	margin: calc(var(--shape-size) * 0.1);
+}
+
+.weather-app {
+	border-radius: calc(var(--shape-size) * 0.18);
+	background-image: linear-gradient(#2062ef, #25d0fd);
+}
+
+.cloud {
+	--cloud-color: rgba(255, 255, 255, 0.9);
+	--height: calc(var(--shape-size) * 0.5);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: var(--height);
+	width: calc(var(--shape-size) * 0.4);
+	border-top-right-radius: var(--height);
+	border-top-left-radius: var(--height);
+	background-color: var(--cloud-color);
+	z-index: 2;
+}
+
+.cloud::before {
+	--height: calc(var(--shape-size) * 0.28);
+	content: '';
+	height: var(--height);
+	width: calc(var(--shape-size) * 0.2);
+	background-color: var(--cloud-color);
+	position: absolute;
+	left: -50%;
+	bottom: 0;
+	border-top-left-radius: var(--height);
+	border-bottom-left-radius: var(--height);
+}
+
+.cloud::after {
+	--height: calc(var(--shape-size) * 0.32);
+	content: '';
+	height: var(--height);
+	width: calc(var(--shape-size) * 0.2);
+	background-color: var(--cloud-color);
+	position: absolute;
+	right: -50%;
+	bottom: 0;
+	border-top-right-radius: var(--height);
+	border-bottom-right-radius: var(--height);
+}
+
+.sun {
+	height: calc(var(--shape-size) * 0.4);
+	width: calc(var(--shape-size) * 0.4);
+	background-color: yellow;
+	border-radius: 50%;
+	position: absolute;
+	top: 20%;
+	left: 5%;
+	z-index: 1;
+}
+
+.google-photos {
+	background-color: #fff;
+	border: calc(var(--shape-size) * 0.03) solid #ccc;
+	border-radius: calc(var(--shape-size) * 0.15);
+}
+
+.half-circle {
+	--height: calc(var(--shape-size) * 0.25);
+	height: var(--height);
+	width: calc(var(--shape-size) * 0.45);
+	background-color: #33a854;
+	border-radius: calc(var(--height) * 2) calc(var(--height) * 2) 0
+		calc(var(--height) * 0.2);
+	position: absolute;
+}
+
+.hc1 {
+	top: 36.6%;
+	left: 2%;
+	transform: translateY(-50%);
+	background-color: #f9ba06;
+}
+
+.hc2 {
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	transform-origin: center;
+	transform: rotate(180deg);
+	background-color: #4286f4;
+}
+
+.hc3 {
+	transform-origin: center;
+	transform: rotate(90deg);
+	left: 39.6%;
+	top: 13%;
+	background-color: #ea4235;
+}
+
+.hc4 {
+	transform-origin: center;
+	transform: rotate(270deg);
+	left: 12.6%;
+	top: 60.8%;
+}
+
+.google {
+	overflow: hidden;
+	position: relative;
+	border: calc(var(--shape-size) * 0.03) solid #ccc;
+	border-radius: calc(var(--shape-size) * 0.15);
+	background-color: #4286f4;
+}
+
+rect {
+	position: absolute;
+}
+
+.rect-1 {
+	height: calc(var(--shape-size) * 0.35);
+	width: calc(var(--shape-size) * 1.1);
+	position: absolute;
+	left: -7%;
+	transform-origin: center;
+	transform: rotate(180deg);
+	background-color: #ea4235;
+}
+
+.rect-2 {
+	border-bottom: calc(var(--shape-size) * 0.4) solid #f9ba06;
+	border-left: calc(var(--shape-size) * 0.15) solid transparent;
+	border-right: calc(var(--shape-size) * 0.15) solid transparent;
+	height: 0;
+	width: calc(var(--shape-size) * 0.75);
+	transform-origin: center;
+	transform: rotate(90deg);
+	top: 35%;
+	position: absolute;
+	left: -26%;
+}
+
+.rect-3 {
+	border-bottom: calc(var(--shape-size) * 0.3) solid #33a854;
+	border-left: calc(var(--shape-size) * 0.4) solid transparent;
+	border-right: calc(var(--shape-size) * 0.35) solid transparent;
+	height: 55%;
+	width: calc(var(--shape-size) * 1);
+	transform-origin: center;
+	transform: rotate(0deg);
+	top: 45%;
+	position: absolute;
+	left: -7%;
+}
+
+.google-g {
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: calc(var(--shape-size) * 1.05);
+	background-color: #fff;
+	color: #fff;
+	-webkit-background-clip: text;
+
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-family: 'futura01', sans-serif;
+}
