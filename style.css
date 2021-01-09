@@ -184,11 +184,135 @@ rect {
 	justify-content: center;
 	align-items: center;
 	font-size: calc(var(--shape-size) * 1.05);
-	background-color: #fff;
-	color: #fff;
-	-webkit-background-clip: text;
-
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+	color: #000;
 	font-family: 'futura01', sans-serif;
+}
+
+.ppt {
+	background-color: #fff;
+	border-radius: calc(var(--shape-size) * 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ppt-circle {
+	height: 0;
+	width: 0;
+	border-radius: 50%;
+	border: calc(var(--shape-size) * 0.4) solid #d65234;
+	border-right-color: #ff906e;
+	border-top-color: #ef6d4b;
+	transform: rotate(-45deg);
+}
+
+.ppt-p {
+	position: absolute;
+	z-index: 2;
+	height: 45%;
+	width: 45%;
+	background-color: #c63f22;
+	border-radius: calc(var(--shape-size) * 0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 400%;
+	box-shadow: calc(var(--shape-size) * 0.01) calc(var(--shape-size) * 0.02)
+		calc(var(--shape-size) * 0.07) calc(var(--shape-size) * 0.02)
+		rgba(0, 0, 0, 0.571);
+	left: 0;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.word {
+	background-color: #fff;
+	/* border: calc(var(--shape-size) * 0.03) solid #ccc; */
+	border-radius: calc(var(--shape-size) * 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.word-box {
+	height: 80%;
+	width: 70%;
+	background-image: linear-gradient(
+		#39a5eb 25%,
+		#39a5eb 25%,
+		#257cd0 25%,
+		#257cd0 50%,
+		#0f5bba 50%,
+		#0f5bba 75%,
+		#0a3f8f 75%,
+		#0a3f8f 100%
+	);
+	background-repeat: no-repeat;
+}
+
+.word-w {
+	position: absolute;
+	z-index: 2;
+	height: 45%;
+	width: 45%;
+	background-color: #0f5bba;
+	border-radius: calc(var(--shape-size) * 0.05);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 400%;
+	box-shadow: calc(var(--shape-size) * 0.01) calc(var(--shape-size) * 0.02)
+		calc(var(--shape-size) * 0.07) calc(var(--shape-size) * 0.02)
+		rgba(0, 0, 0, 0.571);
+	left: 0;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.excel {
+	background-color: #fff;
+	border-radius: calc(var(--shape-size) * 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.excel-box {
+	height: 80%;
+	width: 70%;
+	background-image: linear-gradient(
+		#12a369 25%,
+		#12a369 25%,
+		#007c44 25%,
+		#007c44 50%,
+		#125c38 50%,
+		#125c38 100%
+	);
+	background-size: 50%;
+	position: relative;
+}
+
+.excel-box::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background-image: linear-gradient(
+		#25c483 25%,
+		#25c483 25%,
+		#12a869 25%,
+		#12a869 50%,
+		#007c44 50%,
+		#007c44 75%,
+		#125c38 75%,
+		#125c38 100%
+	);
+}
+
+.xl-x {
+	background-color: #007c44;
 }
