@@ -416,3 +416,76 @@ rect {
 	top: calc(var(--shape-size) * -0.3);
 	left: calc(var(--shape-size) * 0.05);
 }
+
+.google-docs {
+	background-color: #fff;
+	padding-left: 5%;
+}
+
+.yellow-square {
+	height: 80%;
+	width: calc(var(--shape-size) * 0.5);
+	background-color: #fdb800;
+	border-top-left-radius: calc(var(--shape-size) * 0.05);
+	position: absolute;
+}
+
+.yellow-square::before {
+	content: '';
+	position: absolute;
+	z-index: 2;
+	background-color: #fff;
+	height: 70%;
+	width: 50%;
+	left: 50%;
+	top: 30%;
+}
+
+.yellow-square::after {
+	content: '';
+	position: absolute;
+	height: 30%;
+	width: 50%;
+	background-image: linear-gradient(45deg, #ea4235 50%, #fff 50%);
+	left: 100%;
+}
+
+.blue-square-docs {
+	position: absolute;
+	width: 25%;
+	height: 55%;
+	background-color: #2785fe;
+	top: 24%;
+	right: 13.5%;
+}
+
+.blue-square-docs::after {
+	content: '';
+	position: absolute;
+	height: 42%;
+	width: 95%;
+	background-color: #1066da;
+	top: 100%;
+	z-index: 3;
+	left: 4%;
+	border-bottom-right-radius: calc(var(--shape-size) * 0.05);
+}
+
+.green-square-docs {
+	height: 23%;
+	position: absolute;
+	width: calc(var(--shape-size) * 0.25);
+	background-color: #12832e;
+	z-index: 4;
+	bottom: -2%;
+}
+
+.green-square-docs::after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	position: absolute;
+	width: calc(var(--shape-size) * 0.25);
+	background-color: #1bac48;
+	left: 100%;
+}
