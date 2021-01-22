@@ -320,3 +320,99 @@ rect {
 .xl-x {
 	background-color: #007c44;
 }
+
+.google-meet {
+	background-color: #fff;
+	border: calc(var(--shape-size) * 0.03) solid transparent;
+	/* border-radius: calc(var(--shape-size) * 0.15); */
+}
+
+.green-meet {
+	height: 40%;
+	width: calc(var(--shape-size) * 0.2);
+	background-color: #33a853;
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
+	border-bottom-right-radius: calc(var(--shape-size) * 0.05);
+}
+
+.green-meet::after {
+	content: '';
+	position: absolute;
+	height: 90%;
+	width: calc(var(--shape-size) * 0.2);
+	background-color: #33a853;
+	transform: rotate(90deg);
+	bottom: -18%;
+	right: 130%;
+}
+
+.yellow-meet {
+	height: 40%;
+	width: calc(var(--shape-size) * 0.2);
+	background-color: #fabd07;
+	position: absolute;
+	right: 10%;
+	top: 10%;
+	border-top-right-radius: calc(var(--shape-size) * 0.05);
+}
+
+.yellow-meet::before {
+	content: '';
+	position: absolute;
+	height: 90%;
+	width: calc(var(--shape-size) * 0.2);
+	background-color: #fabd07;
+	transform: rotate(90deg);
+	top: -17.75%;
+	right: 130%;
+}
+
+.blue-meet {
+	height: 38%;
+	width: calc(var(--shape-size) * 0.2);
+	background-color: #4285f3;
+	position: absolute;
+	left: 12%;
+	top: 31%;
+}
+
+.blue-meet::after {
+	content: '';
+	position: absolute;
+	height: 56%;
+	width: 100%;
+	background-color: #1a67d2;
+	top: 98.4%;
+	border-bottom-left-radius: calc(var(--shape-size) * 0.05);
+}
+
+.blue-meet::before {
+	content: '';
+	position: absolute;
+	height: 56%;
+	width: 100%;
+	background-color: #1a67d2;
+	background-image: linear-gradient(-45deg, #ea4436 50%, white 50%);
+	top: -55%;
+}
+
+.tri-meet {
+	border: calc(var(--shape-size) * 0.15) solid transparent;
+	border-right: calc(var(--shape-size) * 0.2) solid #11822e;
+	position: absolute;
+	top: -40%;
+	left: -75%;
+	z-index: 1;
+}
+
+.tri-meet::after {
+	content: '';
+	position: absolute;
+	border: calc(var(--shape-size) * 0.15) solid transparent;
+	border-right: calc(var(--shape-size) * 0.2) solid #1bad47;
+	height: calc(var(--shape-size) * 0.6);
+	top: calc(var(--shape-size) * -0.3);
+	left: calc(var(--shape-size) * 0.05);
+}
