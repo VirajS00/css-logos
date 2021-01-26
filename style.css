@@ -478,6 +478,7 @@ rect {
 	background-color: #12832e;
 	z-index: 4;
 	bottom: -2%;
+	border-bottom-left-radius: calc(var(--shape-size) * 0.05);
 }
 
 .green-square-docs::after {
