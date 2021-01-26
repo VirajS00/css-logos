@@ -415,6 +415,7 @@ rect {
 	height: calc(var(--shape-size) * 0.6);
 	top: calc(var(--shape-size) * -0.3);
 	left: calc(var(--shape-size) * 0.05);
+	border-radius: calc(var(--shape-size) * 0.1);
 }
 
 .google-docs {
@@ -487,4 +488,70 @@ rect {
 	width: calc(var(--shape-size) * 0.25);
 	background-color: #1bac48;
 	left: 100%;
+}
+
+.teams-logo {
+	background-color: #fff;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.teams-person-1 {
+	--height: 55%;
+	--bg-color: #7b85ec;
+	background-color: var(--bg-color);
+	height: var(--height);
+	width: 50%;
+	border-radius: calc(var(--shape-size) * 0.06) calc(var(--shape-size) * 0.06)
+		var(--height) var(--height);
+	position: absolute;
+	bottom: 2%;
+	left: 20%;
+	z-index: 2;
+}
+
+.teams-person-1::before {
+	content: '';
+	height: calc(var(--shape-size) * 0.3);
+	width: calc(var(--shape-size) * 0.3);
+	background-color: var(--bg-color);
+	position: absolute;
+	border-radius: 50%;
+	top: -60%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.teams-person-2 {
+	--height: 38%;
+	--bg-color: #5058ca;
+	background-color: var(--bg-color);
+	height: var(--height);
+	width: 30%;
+	border-radius: calc(var(--shape-size) * 0.06) calc(var(--shape-size) * 0.06)
+		calc(var(--height) * 2) calc(var(--height) * 2);
+	position: absolute;
+	top: 42.9%;
+	right: 6.7%;
+	z-index: 1;
+}
+
+.teams-person-2::before {
+	content: '';
+	height: calc(var(--shape-size) * 0.2);
+	width: calc(var(--shape-size) * 0.2);
+	background-color: var(--bg-color);
+	position: absolute;
+	border-radius: 50%;
+	top: -60%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.teams-t {
+	z-index: 3;
+	background-color: #4a53be;
+	top: 30%;
 }
