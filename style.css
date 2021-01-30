@@ -176,16 +176,66 @@ rect {
 }
 
 .google-g {
-	position: absolute;
-	z-index: 2;
 	height: 100%;
 	width: 100%;
+	background-image: radial-gradient(transparent 64%, white 64%);
+	position: absolute;
+	z-index: 3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: calc(var(--shape-size) * 1.05);
-	color: #000;
-	font-family: 'futura01', sans-serif;
+}
+
+.google-g > .g {
+	height: 93%;
+	width: 93%;
+	border-radius: 50%;
+	box-sizing: padding-box;
+	border: calc(var(--shape-size) * 0.15) solid transparent;
+	position: relative;
+}
+
+.google-g > .g::before {
+	content: '';
+	border: calc(var(--shape-size) * 0.6) solid transparent;
+	border-top: calc(var(--shape-size) * 0.07) solid transparent;
+	border-right-color: #fff;
+	position: absolute;
+	right: -95%;
+	top: 25.2%;
+	transform: rotate(-45deg);
+}
+
+.google-g > .g > .g1 {
+	--radius: calc(var(--shape-size) * 0.8);
+	height: 100%;
+	width: 50%;
+	background-color: #fff;
+	border-top-left-radius: var(--radius);
+	border-bottom-left-radius: var(--radius);
+	position: absolute;
+	top: 50%;
+	left: 24%;
+	transform: translate(-50%, -50%);
+}
+
+.google-g > .g > .g1::after {
+	content: '';
+	--radius: calc(var(--shape-size) * 0.8);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: calc(var(--shape-size) * 0.04);
+	background-image: linear-gradient(
+		#fff 51%,
+		transparent 51%,
+		transparent 74%,
+		#fff 74%
+	);
+	position: absolute;
+	left: 99%;
+	border-top-right-radius: var(--radius);
+	border-bottom-right-radius: var(--radius);
 }
 
 .ppt {
