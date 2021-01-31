@@ -23,6 +23,76 @@
 	margin: calc(var(--shape-size) * 0.1);
 }
 
+.among-us {
+	border-radius: calc(var(--shape-size) * 0.18);
+	background-color: #fede2b;
+	position: relative;
+	overflow: hidden;
+}
+
+.a-us-body {
+	height: 85%;
+	width: calc(var(--shape-size) * 0.65);
+	background-color: #880933;
+	border-top-left-radius: 140%;
+	border-top-right-radius: 140%;
+	position: absolute;
+	bottom: -5%;
+	left: 45%;
+	transform: translateX(-50%);
+	border: calc(var(--shape-size) * 0.045) solid #000;
+	border-bottom-color: #880933;
+	z-index: 2;
+}
+
+.a-us-body::before {
+	content: '';
+	border-radius: 50%;
+	background-color: #f21817;
+	height: 95%;
+	width: 98%;
+	transform: rotate(10deg);
+	position: absolute;
+	left: -1%;
+}
+
+.a-us-body::after {
+	content: '';
+	height: 70%;
+	width: 40%;
+	background-image: radial-gradient(#880933 20%, #f21817 20%);
+	background-size: 700% 400%;
+	background-position: -65% 42%;
+	border-top-right-radius: 40%;
+	position: absolute;
+	left: 100%;
+	bottom: -5%;
+	z-index: 1;
+	border: calc(var(--shape-size) * 0.045) solid #000;
+}
+
+.face-shield {
+	height: 35%;
+	width: 55%;
+	border-radius: 50%;
+	background-color: lightblue;
+	background-image: radial-gradient(
+		#fff 0%,
+		#fff 25%,
+		#74dcf4 25%,
+		#74dcf4 50%,
+		#245784 50%,
+		#245784 100%
+	);
+	background-size: 150% 150%;
+	background-position: 80% 140%;
+	position: absolute;
+	z-index: 3;
+	top: 33%;
+	left: 3%;
+	border: calc(var(--shape-size) * 0.045) solid #000;
+}
+
 .weather-app {
 	border-radius: calc(var(--shape-size) * 0.18);
 	background-image: linear-gradient(#2062ef, #25d0fd);
@@ -201,8 +271,8 @@ rect {
 	border-top: calc(var(--shape-size) * 0.07) solid transparent;
 	border-right-color: #fff;
 	position: absolute;
-	right: -95%;
-	top: 25.2%;
+	right: -96%;
+	top: 25%;
 	transform: rotate(-45deg);
 }
 
@@ -227,8 +297,8 @@ rect {
 	top: 0;
 	left: calc(var(--shape-size) * 0.04);
 	background-image: linear-gradient(
-		#fff 51%,
-		transparent 51%,
+		#fff 50.5%,
+		transparent 50.5%,
 		transparent 74%,
 		#fff 74%
 	);
@@ -373,8 +443,6 @@ rect {
 
 .google-meet {
 	background-color: #fff;
-	border: calc(var(--shape-size) * 0.03) solid transparent;
-	/* border-radius: calc(var(--shape-size) * 0.15); */
 }
 
 .green-meet {
@@ -382,8 +450,8 @@ rect {
 	width: calc(var(--shape-size) * 0.2);
 	background-color: #33a853;
 	position: absolute;
-	right: 10%;
-	bottom: 10%;
+	right: 14%;
+	bottom: 10.3%;
 	border-bottom-right-radius: calc(var(--shape-size) * 0.05);
 }
 
@@ -394,7 +462,7 @@ rect {
 	width: calc(var(--shape-size) * 0.2);
 	background-color: #33a853;
 	transform: rotate(90deg);
-	bottom: -18%;
+	bottom: -20%;
 	right: 130%;
 }
 
@@ -403,7 +471,7 @@ rect {
 	width: calc(var(--shape-size) * 0.2);
 	background-color: #fabd07;
 	position: absolute;
-	right: 10%;
+	right: 14%;
 	top: 10%;
 	border-top-right-radius: calc(var(--shape-size) * 0.05);
 }
@@ -415,23 +483,23 @@ rect {
 	width: calc(var(--shape-size) * 0.2);
 	background-color: #fabd07;
 	transform: rotate(90deg);
-	top: -17.75%;
+	top: -20%;
 	right: 130%;
 }
 
 .blue-meet {
-	height: 38%;
+	height: 40.3%;
 	width: calc(var(--shape-size) * 0.2);
 	background-color: #4285f3;
 	position: absolute;
 	left: 12%;
-	top: 31%;
+	top: 30%;
 }
 
 .blue-meet::after {
 	content: '';
 	position: absolute;
-	height: 56%;
+	height: 50%;
 	width: 100%;
 	background-color: #1a67d2;
 	top: 98.4%;
@@ -441,18 +509,17 @@ rect {
 .blue-meet::before {
 	content: '';
 	position: absolute;
-	height: 56%;
+	height: 52%;
 	width: 100%;
-	background-color: #1a67d2;
 	background-image: linear-gradient(-45deg, #ea4436 50%, white 50%);
-	top: -55%;
+	top: -52%;
 }
 
 .tri-meet {
 	border: calc(var(--shape-size) * 0.15) solid transparent;
 	border-right: calc(var(--shape-size) * 0.2) solid #11822e;
 	position: absolute;
-	top: -40%;
+	top: -38%;
 	left: -75%;
 	z-index: 1;
 }
