@@ -845,7 +845,7 @@ rect {
 .logos-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, calc(var(--shape-size) * 1.5));
-	gap: 1rem;
+	gap: 1.5rem;
 	justify-content: center;
 	padding: 3% 0;
 }
