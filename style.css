@@ -1,8 +1,3 @@
-@font-face {
-	font-family: 'futura01';
-	src: url(Futura-Medium.ttf);
-}
-
 *,
 *::before,
 *::after {
@@ -18,7 +13,6 @@
 .shape-container {
 	height: var(--shape-size);
 	width: var(--shape-size);
-	background-color: tomato;
 	position: relative;
 	margin: calc(var(--shape-size) * 0.1);
 }
@@ -847,7 +841,7 @@ rect {
 	grid-template-columns: repeat(auto-fit, calc(var(--shape-size) * 1.5));
 	gap: 1.5rem;
 	justify-content: center;
-	padding: 3% 0;
+	padding: 2% 0;
 }
 
 .logo-container {
@@ -863,15 +857,15 @@ rect {
 }
 
 .title {
-	font-family: 'futura01', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	grid-column: 1/-1;
 	text-align: center;
 	font-size: 3.3rem;
-	padding-bottom: 3%;
+	padding-bottom: 1%;
 }
 
 .logo-title {
-	font-family: 'futura01', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 /* logos grid end */
@@ -883,5 +877,10 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'futura01', sans-serif;
+	font-family: 'Poppins', sans-serif;
+}
+
+.title > p {
+	font-size: 1.1rem;
+	color: #ccc;
 }
