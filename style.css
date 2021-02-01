@@ -842,6 +842,8 @@ rect {
 	gap: 1.5rem;
 	justify-content: center;
 	padding: 2% 0;
+	max-width: 1200px;
+	margin: auto;
 }
 
 .logo-container {
