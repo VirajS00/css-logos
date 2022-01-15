@@ -886,3 +886,63 @@ footer {
 	font-size: 1.1rem;
 	color: #ccc;
 }
+
+/* apple home */
+
+.apple-home {
+	--clr: #ffe780;
+	background-color: #fff;
+	border: calc(var(--shape-size) * 0.03) solid #ccc;
+	border-radius: calc(var(--shape-size) * 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.apple-home .houses {
+	position: absolute;
+	top: 55%;
+	left: 40%;
+	height: min-content;
+	width: min-content;
+} 
+
+.apple-home .house {
+	height: calc(var(--shape-size) * 0.13);
+	width: calc(var(--shape-size) * 0.18);
+	background-color: var(--clr);
+	border-radius: 0 0 calc(var(--shape-size) * 0.02) calc(var(--shape-size) * 0.02);
+	transform: translateY(-5%);
+	position: absolute;
+}
+
+.apple-home .house::after {
+	content: '';
+	height: 0;
+	width: 0;
+	border: calc(var(--shape-size) * 0.09) solid transparent;
+	border-bottom-color: var(--clr);
+	position: absolute;
+	top:-139%;
+}
+
+.apple-home .house2 {
+	--clr: #ffd260;
+	transform: scale(1.5);
+}
+
+.apple-home .house3 {
+	--clr: #ffbe3f;
+	transform: scale(2);
+}
+
+.apple-home .house4 {
+	--clr: #ffab1f;
+	transform: scale(2.5);
+}
+
+.apple-home .house5 {
+	--clr: #fd9305;
+	transform: scale(3);
+}
