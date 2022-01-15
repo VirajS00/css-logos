@@ -946,3 +946,30 @@ footer {
 	--clr: #fd9305;
 	transform: scale(3);
 }
+
+.apple-home .house5::after {
+	border-width: calc(var(--shape-size) * 0.108);
+	top: -150%;
+	left: -10%;
+}
+
+.apple-home .house5::before {
+	content: '';
+	height: calc(var(--shape-size) * 0.014);
+	width: calc(var(--shape-size) * 0.014);
+	background-color: var(--clr);
+	position: absolute;
+	top: calc(var(--shape-size) * -0.09);
+	left: calc(var(--shape-size) / 12);
+	border-radius: 50%;
+}
+
+.apple-home .chimney {
+	height: calc(var(--shape-size) * 0.2);
+	width: calc(var(--shape-size) * 0.08);
+	background-color: #fd9305;
+	position: absolute;
+	top: calc(var(--shape-size) * -0.32);
+	left: calc(var(--shape-size) * 0.24);
+	border-radius: calc(var(--shape-size) * 0.02) calc(var(--shape-size) * 0.02) 0 0;
+}
